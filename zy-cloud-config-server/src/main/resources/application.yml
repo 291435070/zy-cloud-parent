@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/291435070/james
+          search-paths: repository
+          username: null
+          password: null
+          basedir: D:/home/git
+      label: master
+server:
+  port: 8008
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8003/eureka/

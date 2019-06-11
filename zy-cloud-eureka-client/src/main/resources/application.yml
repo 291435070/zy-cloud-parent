@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-client
+server:
+  port: 8004
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8003/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      cors:
+        allowed-origins: '*'
+        allowed-methods: '*'

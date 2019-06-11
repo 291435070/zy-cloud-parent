@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-server
+  profiles: peer1
+server:
+  port: 9001
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:9002/eureka/

@@ -1,0 +1,9 @@
+1.bootstrap.yml加载先于application.yml
+
+2.git仓库配置的文件命名规则:spring.application.name=config-client,spring.cloud.config.profile=dev
+最终文件名:config-client-dev
+
+3.POST方式执行http://127.0.0.1:8009/actuator/refresh动态刷新git配置
+(参考博文:https://blog.csdn.net/weixin_43430036/article/details/83988780)
+
+4.消息总线方式动态刷新,POST方式:http://127.0.0.1:8009/actuator/bus-refresh
